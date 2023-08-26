@@ -1,0 +1,162 @@
+@font-face {
+    font-family: MyFont;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: MyFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.card {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.right {
+    width: 40%;
+}
+
+.left {
+    width: 60%;
+    /* padding-left: 20px; */
+}
+
+.right img {
+    width: 100%;
+}
+
+ul {
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    transition: all 1s;
+}
+
+.hide {
+    display: none;
+}
+
+.card-2 {
+    background-color: white;
+    width: 450px;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.card-2 h1 {
+    font-size: 40px;
+}
+
+.icon-card-2 {
+    width: 50px;
+}
+
+.card-2 button {
+    width: 100%;
+}
+
+.emailAndError {
+    display: flex;
+    font-family: MyFont;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.errorMessage {
+    font-family: MyFont;
+    font-size: 11px;
+    color: hsl(4, 100%, 67%);
+}
+
+@media (max-width:700px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        width: 95%;
+        padding: 0;
+    }
+
+    .card h1 {
+        font-size: 30px;
+    }
+
+    .left {
+        width: 100%;
+        padding: 23px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right img {
+        content: url("./assets/images/illustration-sign-up-mobile.svg");
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .card-2 {
+        min-height: 100vh;
+    }
+
+}
